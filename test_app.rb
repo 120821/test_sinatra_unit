@@ -1,10 +1,10 @@
 ENV['APP_ENV'] = 'test'
 
-require 'hello_world'
+require './app'
 require 'test/unit'
 require 'rack/test'
 
-class HelloWorldTest < Test::Unit::TestCase
+class AppTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app
